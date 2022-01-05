@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Markazi+Text&family=Poppins:ital,wght@0,300;1,100;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
+/* define variables for colors */
 :root {
   --mainColor: rgb(46, 44, 44);
   --secondColor: orange;
+  --altColor: rgb(24, 4, 4);
 }
+
+/* defines all elements in the document */
 * {
   box-sizing: border-box;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Indie Flower';
 }
 
 body {
@@ -24,14 +28,12 @@ body {
   text-align: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .countdown_container {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   margin: 0;
   padding: 0;
 }
@@ -46,13 +48,12 @@ h1 {
   color: var(--secondColor);
   font-size: 40px;
   text-transform: lowercase;
-  margin: 10px;
-  margin-top: 50px;
+  margin: 50px 0 0 10px;
   border: 5px;
   border-color: brown;
   border-style: double;
-  width: 210px;
-  height: 210px;
+  width: 180px;
+  height: 200px;
   background-color: var(--mainColor);
 }
 
@@ -86,9 +87,9 @@ span {
   cursor: pointer;
 }
 
-#save_date {
+#text {
   margin-top: 50px;
-  background-color: var(--mainColor);
+  background-color: var(--altColor);
   color: var(--secondColor);
   font-size: 30px;
 }
